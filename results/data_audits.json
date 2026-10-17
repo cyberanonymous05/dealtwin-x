@@ -1,0 +1,11 @@
+{
+ "point_in_time": {
+  "deals_compared": 1760,
+  "end_date_rule_uses_fact_filed_after_deal": 451,
+  "share_filed_after_deal": 0.2562,
+  "revenue_value_differs": 246,
+  "share_value_differs": 0.1398,
+  "median_relative_gap_when_different": 0.1271
+ },
+ "deal_price_audit_sample_size": 60
+}

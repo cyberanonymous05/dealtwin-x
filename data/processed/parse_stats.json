@@ -1,0 +1,115 @@
+{
+  "n_candidate_filings": 3841,
+  "n_candidate_targets": 3336,
+  "n_targets_excluded": 920,
+  "n_candidates_by_form": {
+    "DEFM14A": 2781,
+    "SC 14D9": 912,
+    "DEFM14C": 148
+  },
+  "n_deals": 2416,
+  "n_deals_by_type": {
+    "merger_proxy": 1947,
+    "tender_offer": 469
+  },
+  "excluded_filings_of_unmatched_targets": {
+    "DEFM14A|acquirer_side_proxy": 104,
+    "DEFM14A|asset_sale": 3,
+    "DEFM14A|no_merger_agreement": 369,
+    "DEFM14A|no_point_in_time_xbrl": 5,
+    "DEFM14A|spac_blank_check": 219,
+    "DEFM14A|spac_business_combination": 89,
+    "DEFM14C|no_merger_agreement": 24,
+    "SC 14D9|no_merger_agreement": 259,
+    "SC 14D9|spac_blank_check": 12,
+    "SC 14D9|text_too_short": 11
+  },
+  "completion_status": {
+    "completed": 2244,
+    "terminated": 165,
+    "unknown": 7
+  },
+  "clause_selector": {
+    "silver_standard_filings": 120,
+    "ungated": {
+      "per_type": {
+        "appraisal_rights": {
+          "precision": 0.971,
+          "n_passages": 240
+        },
+        "earnout_contingent_value": {
+          "precision": 0.042,
+          "n_passages": 240
+        },
+        "exchange_ratio_consideration": {
+          "precision": 0.688,
+          "n_passages": 240
+        },
+        "material_adverse_effect": {
+          "precision": 0.562,
+          "n_passages": 240
+        },
+        "no_solicitation_fiduciary_out": {
+          "precision": 0.596,
+          "n_passages": 240
+        },
+        "regulatory_approval": {
+          "precision": 0.242,
+          "n_passages": 240
+        },
+        "representations_warranties": {
+          "precision": 0.742,
+          "n_passages": 240
+        },
+        "termination_fee": {
+          "precision": 0.854,
+          "n_passages": 240
+        }
+      },
+      "overall": 0.587
+    },
+    "lexical_gate_types": [
+      "earnout_contingent_value",
+      "regulatory_approval",
+      "material_adverse_effect"
+    ],
+    "gated": {
+      "per_type": {
+        "appraisal_rights": {
+          "precision": 0.971,
+          "n_passages": 240
+        },
+        "earnout_contingent_value": {
+          "precision": 1.0,
+          "n_passages": 54
+        },
+        "exchange_ratio_consideration": {
+          "precision": 0.692,
+          "n_passages": 240
+        },
+        "material_adverse_effect": {
+          "precision": 1.0,
+          "n_passages": 218
+        },
+        "no_solicitation_fiduciary_out": {
+          "precision": 0.592,
+          "n_passages": 240
+        },
+        "regulatory_approval": {
+          "precision": 1.0,
+          "n_passages": 221
+        },
+        "representations_warranties": {
+          "precision": 0.742,
+          "n_passages": 240
+        },
+        "termination_fee": {
+          "precision": 0.858,
+          "n_passages": 240
+        }
+      },
+      "overall": 0.838
+    },
+    "deals_with_passage": 2416
+  }
+}

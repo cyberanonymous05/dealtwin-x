@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+data/raw/*
+*.faiss
+*.index
+.ipynb_checkpoints/
+.DS_Store
+
+# revision additions
+.env
+data/raw/
+logs_*.txt
+__pycache__/
+*.pyc
+paper/*.aux
+paper/*.log
+
+human_audit/expert_annotation_KEY_do_not_share.json

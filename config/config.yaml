@@ -1,0 +1,61 @@
+data_sources:
+  sec_edgar:
+    user_agent: DealTwin-X Research <your-email>
+    end_date: '2025-06-30'
+    start_year: 2013
+    end_year: 2025
+    proxy_queries:
+    - '"agreement and plan of merger"'
+    - '"merger agreement"'
+    - '"special meeting"'
+    - '"merger consideration"'
+    - '"termination fee"'
+    - '"opinion of"'
+    - '"appraisal rights"'
+    - '"material adverse effect"'
+    - '"per share in cash"'
+    - '"exchange ratio"'
+    - '"superior proposal"'
+    - '"fairness opinion"'
+    - '"regulatory approvals"'
+    - '"interests of"'
+    - '"background of the merger"'
+    tender_queries:
+    - '"tender offer"'
+    - '"agreement and plan of merger"'
+    - '"offer to purchase"'
+    - '"solicitation/recommendation statement"'
+    - '"section 251(h)"'
+  fred:
+    api_key_env: FRED_API_KEY
+    series:
+    - id: FEDFUNDS
+      name: fed_funds_rate
+    - id: DGS10
+      name: treasury_10y
+    - id: T10Y2Y
+      name: yield_curve_10y2y
+    - id: BAA10Y
+      name: credit_spread_baa10y
+    - id: VIXCLS
+      name: vix
+  yahoo_finance:
+    lookback_days: 60
+embeddings:
+  legal_clause_model: yiyanghkust/finbert-tone
+  numeric_block_weight: 1.0
+  legal_block_weight: 0.35
+retrieval:
+  faiss_index_type: IndexFlatIP
+  top_k: 5
+evaluation:
+  metrics:
+  - ndcg@5
+  - map
+  - mrr
+  - precision@5
+  - recall@10
+  cv_folds: 5
+  cv_strategy: deal_level_group_kfold
+  relevance_heuristic: 'graded: 2 = exact SIC match, 1 = same 2-digit SIC group, 0
+    = otherwise (no expert-labeled ground truth available from free sources)'

@@ -1,0 +1,13 @@
+{
+  "raw_hits": {
+    "DEFM14A": 36886,
+    "SC 14D9": 16859
+  },
+  "unique_primary_filings": 3841,
+  "unique_target_ciks": 3336,
+  "by_form": {
+    "DEFM14A": 2781,
+    "SC 14D9": 912,
+    "DEFM14C": 148
+  }
+}
